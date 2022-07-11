@@ -41,7 +41,7 @@ body {
   align-items: center;
   padding-top: 115px;
   padding-bottom: 115px;
-  background-image: url(/images/back.png);
+  background-image: url('../images/back.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
