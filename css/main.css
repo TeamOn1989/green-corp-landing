@@ -22,6 +22,11 @@ ul, a, ol {
 }
 
 .header {
+  max-width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -33,7 +38,12 @@ ul, a, ol {
 
 .header__link {
   text-decoration: none;
+  font-weight: bold;
   color: #213053;
+}
+
+.header__controllers {
+  display: inline-block;
 }
 
 .btn {
@@ -56,6 +66,7 @@ ul, a, ol {
 }
 
 .about {
+  max-width: 100%;
   justify-content: space-between;
   align-items: center;
   padding-top: 115px;
@@ -67,13 +78,33 @@ ul, a, ol {
   padding: 20px;
 }
 
-.about__image {
+.about__images {
+  position: relative;
+}
+
+.about__image_solar-battery {
   width: 500px;
 }
 
-.about__sun-image {
+.about__sun_image {
   width: 100px;
   height: 100px;
+  animation: rotation 10s linear infinite;
+  position: absolute;
+}
+
+@keyframes rotation {
+  0% {transform: rotate(0deg);}
+  10% {transform: rotate(10deg);}
+  20% {transform: rotate(20deg);}
+  30% {transform: rotate(30deg);}
+  40% {transform: rotate(40deg);}
+  50% {transform: rotate(50deg);}
+  60% {transform: rotate(60deg);}
+  70% {transform: rotate(70deg);}
+  80% {transform: rotate(80deg);}
+  90% {transform: rotate(90deg);}
+  100% {transform: rotate(100deg);}
 }
 
 .about__heading {
@@ -82,6 +113,7 @@ ul, a, ol {
 }
 
 .about__decription {
+  display: inline-block;
   font-size: 18px;
   line-height: 30px;
   opacity: 0.8;
@@ -182,8 +214,10 @@ ul, a, ol {
 
 .footer__item {
   margin-bottom: 15px;
+  line-height: 1.5;
 }
 
 .footer__item:last-child {
   margin-bottom: 0;
 }
+

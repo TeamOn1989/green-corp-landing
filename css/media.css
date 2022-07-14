@@ -1,0 +1,58 @@
+@media (max-width: 1024px) {
+  .about__heading {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .about__sun_image {
+    max-width: 75px;
+    max-height: 75px;
+  }
+
+  .about__image_solar-battery {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 720px) {
+  .header {
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .header__logo {
+    height: 20px;
+  }
+
+  .header__button {
+    margin-left: 5px;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+    padding: 50px 10px;
+  }
+
+  .form {
+    padding: 50px 10px;
+  }
+
+  .form__heading {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .footer__item__heading {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .footer__item {
+    line-height: 1.5;
+  }
+}
