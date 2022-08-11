@@ -12,6 +12,57 @@
   .about__image_solar-battery {
     max-width: 280px;
   }
+
+  .features {
+    padding: 50px 10px;
+  }
+
+  .features__card-itm-list {
+    flex-direction: column;
+  }
+
+  .features__card-itm {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .features__card-itm:last-child {
+    margin-bottom: 0;
+  }
+
+  .features__card-itm-list_bottom {
+    flex-direction: column;
+  }
+
+  .features__card-bottom-item_middle {
+    margin-right: 0;
+  }
+
+  .features__card-bottom-item {
+    margin-bottom: 30px;
+  }
+
+  .features__card-bottom-item:last-child {
+    margin-bottom: 0px;
+  }
+
+  .features__card-bottom-item_heading {
+    font-size: 36px;
+  }
+
+  .promo {
+    flex-direction: column-reverse;
+  }
+
+  .promo__left {
+    width: 100%;
+    height: 500px;
+  }
+
+  .promo__right {
+    padding: 50px 10px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 720px) {
@@ -54,5 +105,61 @@
 
   .footer__item {
     line-height: 1.5;
+  }
+
+  .features {
+    padding: 50px 10px;
+  }
+
+  .features__card-itm-list {
+    flex-direction: column;
+  }
+
+  .features__card-itm {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .features__card-itm:last-child {
+    margin-bottom: 0;
+  }
+
+  .features__border {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .features__card-itm-list_bottom {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .features__card-bottom-item_middle {
+    margin-right: 0;
+  }
+
+  .features__card-bottom-item {
+    margin-bottom: 30px;
+  }
+
+  .features__card-bottom-item:last-child {
+    margin-bottom: 0px;
+  }
+
+  .features__card-bottom-item_heading {
+    font-size: 36px;
+  }
+
+  .promo__right {
+    padding: 50px 10px;
+    width: 100%;
+  }
+
+  .promo {
+    flex-direction: column-reverse;
+  }
+
+  .promo__item-heading {
+    font-size: 25px;
   }
 }
