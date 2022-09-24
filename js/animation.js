@@ -63,6 +63,7 @@ addSmoothScroll(document.querySelector('.more-button'));
 function updateScroll() {
   if (window.scrollY > 0) {
     document.querySelector('header').classList.add('header__scrolled');
+    console.log('yo')
   } else {
     document.querySelector('header').classList.remove('header__scrolled');
   }
@@ -74,3 +75,4 @@ function updateScroll() {
     initIncreaseNumberAnimation();
   }
 }
+window.addEventListener('scroll', updateScroll)
