@@ -9,244 +9,194 @@
   <link rel="stylesheet" href="fa/css/all.min.css">
   <link rel="stylesheet" href="uikit/css/uikit.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
   <title>Солнечные батареи GreenCorp</title>
 </head>
 <body>
-  <header class="header flex">
-    <img src="images/logo.svg" alt="logo" class="header__logo">
-    <div class="header__controllers">
-      <a href="#contacts" class="header__link">
-        Контакты
-      </a>
-      <button class="btn header__button">
-        Заказать
-      </button>
+  <header>
+    <img class="header__logo" src="img/logo.svg">
+    <div class="header__controls">
+      <a href="#form">Контакты</a>
+      <button type="button">Заказать</button>
     </div>
   </header>
 
-  <section class="about flex">
-    <div class="about__info uk-animation-slide-left">
-      <h1 class="about__heading">
-        Солнечные панели GreenRobotic
-      </h1>
-      <p class="about__decription">
-        Производите дешёвую экологически чистую электроэнергию из солнечного света
-      </p>
-      <button class="btn btn_about">
-        Узнать подробнее
-        <i class="fa-solid fa-angle-right"></i>
-      </button>
-    </div>
-    <div class="about__images uk-animation-slide-right">
-      <img class="about__sun_image" src="images/sun.png" alt="Солнышко">
-      <img class="about__image_solar-battery" src="images/solar-panel.png" alt="Солнечная батарея">
-    </div>
+  <section class="about">
+    <canvas class="orb-canvas" id="orb-canvas"></canvas>
+    <div class="about__info animate__animated animate__fadeInLeft animate__slow">
+      <h1>Солнечные панели GreenRobotic</h1>
+      <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
+      <button class="more-button" href="#features">Узнать подробнее <i class="fas fa-angle-right"></i></button>
+  </div>
+  <div class="about__images animate__animated animate__fadeInRight animate__slow">
+      <img class="about__sun-image" src="img/sun.png">
+      <img class="about__image" src="img/solar-panel.png">
+  </div>
   </section>
 
-  <section class="features">
-    <ul class="features__card-itm-list flex">
-      <li class="features__card-itm">
-        <div class="features__card-itm-logo flex">
-          <i class="fa-solid fa-solar-panel features__card-itm-logo_style"></i>
+  <section class="features" id="features">
+    <div class="cards">
+      <div class="card">
+        <div class="card__logo yellow">
+          <i class="fas fa-solar-panel"></i>
         </div>
-        <h3 class="features__card-itm-heading">
-          Уменьшите счета за электричество.
-        </h3>
-        <p class="features__card-itm-desc">
-          Используйте чистую солнечную энергию для питания своего дома: уменьшите зависимость от электросети и счета за электричество.
-        </p>
-      </li>
-      <li class="features__card-itm">
-        <div class="features__card-itm-logo flex">
-          <h4 class="features__card-itm-logo_style">
-            24/7
-          </h4>
-        </div>
-        <h3 class="features__card-itm-heading">
-          Мониторинг электроэнергии.
-        </h3>
-        <p class="features__card-itm-desc">
-          Используйте чистую солнечную энергию для питания своего дома: уменьшите зависимость от электросети и счета за электричество.
-        </p>
-      </li>
-      <li class="features__card-itm">
-        <div class="features__card-itm-logo flex">
-          <i class="fa-solid fa-chart-line features__card-itm-logo_style"></i>
-        </div>
-        <h3 class="features__card-itm-heading">
-          Максимальная эффективность.
-        </h3>
-        <p class="features__card-itm-desc">
-          Используйте чистую солнечную энергию для питания своего дома: уменьшите зависимость от электросети и счета за электричество.
-        </p>
-      </li>
-    </ul>
-    <div class="features__border">
-    </div>
-    <ul class="features__card-itm-list_bottom flex">
-      <li class="features__card-bottom-item features__card-bottom-item_big">
-        <h2 class="features__card-bottom-heading_big">
-          Нам доверяет<br>5000+ счастливых клиентов.
-        </h2>
-        <p class="features__card-bottom-desc_big">
-          Мы помогли тысячам людей перейти на зеленую энергию.<br>После заказа мы позаботимся обо всем: доставка панелей, проект, установка, помощь в использовании.
-        </p>
-      </li>
-      <li class="features__card-bottom-item features__card-bottom-item_middle">
-        <h3 class="features__card-bottom-item_heading">
-          30 млн ₽
-        </h3>
-        <p class="features__card-bottom-item_desc">
-          Помогаем экономить нашим клиентам ежемесячно.
-        </p>
-      </li>
-      <li class="features__card-bottom-item features__card-bottom-item_little">
-        <h3 class="features__card-bottom-item_heading">
-          4/7
-        </h3>
+        <h3>Уменьшите счета за электричество</h3>
         <p>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
+            Используйте чистую солнечную энергию для питания своего дома: уменьшите зависимость от электросети и счета за электричество.
         </p>
-        <p class="features__card-bottom-item_desc">
-          Средняя оценка наших клиентов.
+      </div>
+      <div class="card">
+        <div class="card__logo red">
+            24/7
+        </div>
+        <h3>Мониторинг электроэнергии</h3>
+        <p>
+            Управляйте своей системой солнечных панелей из любой точки мира с помощью специального мобильного приложения.
         </p>
-      </li>
-    </ul>
+      </div>
+      <div class="card">
+        <div class="card__logo green">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3>Максимальная эффективность</h3>
+        <p>
+            Солнечные панели GreenRobotic обеспечивают максимальное производство энергии круглый год, даже на крышах со сложными углами.
+        </p>
+      </div>
+    </div>
+    <div class="features__border"></div>
+    <div class="features__feedback">
+      <div class="features__feedback-left">
+        <h2>
+           Нам доверяет
+           <br>
+           <div class="features__clients-count">
+            5000+
+          </div> счастливых клиентов
+        </h2>
+        <p>
+           Мы помогли тысячам людей перейти на зеленую энергию.
+          <br>
+           После заказа мы позаботимся обо всем: доставка панелей, проект, установка, помощь в использовании
+        </p>
+      </div>
+      <div class="features__feedback-right">
+        <div class="features__box features__savings-box">
+          <h3>30 млн ₽</h3>
+          <p>Помогаем экономить нашим клиентам ежемесячно</p>
+        </div>
+        <div class="features__box features__rate-box">
+          <h3>4.7</h3>
+          <p class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+          <p>
+            Средняя оценка наших клиентов
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="promo flex">
-    <div class="promo__left promo__left-background">
-
-    </div>
+  <section class="promo">
+    <div class="promo__image"></div>
     <div class="promo__right">
-      <ul class="promo__right-itm-list">
-        <li>
-          <h2 class="promo__item-heading">
-            Зарядите свой дом
-          </h2>
-        </li>
-        <li>
-          <p class="promo__item-desc">
-            <span class="promo__point"></span>Солнечные панели сертифицированы мировыми экспертами: система безопасна и надежна.
-          </p>
-        </li>
-        <li>
-          <p class="promo__item-desc">
-            <span class="promo__point"></span>Следите за накоплением энергии вашего дома в режиме реального времени и настраивайте процент расхода и накопления энергии.
-          </p>
-        </li>
-        <li class="promo__btn">
-          <button class="btn promo__btn-style">
-            Заказать
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
-        </li>
-      </ul>
+      <div class="promo__text">
+        <h2>Зарядите свой дом</h2>
+        <p>
+            Солнечные панели сертифицированы мировыми экспертами: система безопасна и надежна.
+        </p>
+        <p>
+            Следите за накоплением энергии вашего дома в режиме реального времени и настраивайте процент расхода и накопления энергии.
+        </p>
+        <div class="promo__button-wrap">
+          <button type="button">Заказать <i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="form flex">
-    <div class="form__container flex">
-      <h2 class="form__heading">
-        Оставьте свои контакты
-      </h2>
-      <p class="form__desc">
-        Поможем подобрать модель.
-        <br>
-        Выбрать удобный вариант доставки и установки.
-        <br>
-        Гарантия возврата денег.
-      </p>
-      <form class="form__blanc">
-        <div class="form__input flex">
-          <label for="name">Ваше имя</label>
-          <input type="text" placeholder="Введите имя" id="name" class="form__input_style">
+  <section class="form" id="form">
+    <div class="form__container">
+      <h1>Оставьте свои контакты</h1>
+       <p>Поможем подобрать модель. <br> Выбрать удобный вариант доставки и установки. <br> Гарантия возврата денег.</p>
+       <form>
+        <div class="form__group">
+            <label for="name">Ваше имя</label>
+            <input type="text" placeholder="Введите имя" id="name">
         </div>
-        <div class="form__input flex">
-          <label for="email">Электронный адрес</label>
-          <input type="email" placeholder="***@yandex.ru" id="email" class="form__input_style">
+        <div class="form__group">
+            <label for="email">Электронный адрес</label>
+            <input type="email" placeholder="***@yandex.ru" id="email">
         </div>
-        <div class="form__input flex">
-          <label for="phone">Номер телефона</label>
-          <input type="tel" placeholder="7 (999) 999-99-99" id="phone" class="form__input_style">
+        <div class="form__group">
+            <label for="phone">Номер телефона</label>
+            <input type="tel" placeholder="7 (999) 999-99-99" id="phone">
         </div>
-        <div class="form__input flex">
-          <label for="budget">Примерный бюджет</label>
-          <select name="Примерный бюджет" id="budget" class="form__input_style form__select">
-            <option value="10-30">10 000₽ – 30 000₽</option>
-            <option value="60-100">60 000₽ – 100 000₽</option>
-            <option value="100+">100 000₽</option>
-          </select>
+        <div class="form__group">
+            <label for="budget">Примерный бюджет</label>
+            <select id="budget">
+                <option>
+                  Выберите вариант
+                </option>
+                <option value="10 - 30">
+                  10 000₽ - 30 000₽
+                </option>
+                <option value="30 - 60">
+                  30 000₽ - 60 000₽
+                </option>
+                <option value="60 - 100">
+                  60 000₽ - 100 000₽
+                </option>
+                <option value="other">
+                  Другое
+                </option>
+              </select>
         </div>
-        <button type="submit" class="form__button btn form_btn">Отправить заявку</button>
-      </form>
+        <button type="submit" class="form__submit">
+            Отправить заявку
+        </button>
+     </form>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="footer__container flex">
-      <ul class="footer__item__list">
-        <li class="footer__item__desc">
-          <h3 class="footer__item__heading">
-            Позвонить нам
-          </h3>
-        </li>
-        <li class="footer__item">
-          <a href="tel:74959999999" class="footer__item-link">
-            +7 (495) 999-99-99
-          </a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <h3 class="footer__item__heading">
-            Решения для дома:
-          </h3>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__item-link">
-            Солнечные панели GreenRobotic
-          </a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__item-link">
-            Системы солнечных панелей GreenStation
-          </a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <h3 class="footer__item__heading">
-            Компания
-          </h3>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__item-link">
-            Контакты
-          </a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__item-link">
-            Вакнсии
-          </a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__item-link">
-            СМИ
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__copyright flex">
-      <a href="#" class="footer__link">
-        GreenCorp © 2021
-      </a>
-    </div>
-  </footer>
+  <footer>
+    <div class="footer__container">
+      <div class="footer__group">
+          <h3>Позвонить нам:</h3>
+          <div class="footer__links">
+              <a href="tel:74959999999">+7 (495) 999-99-99</a>
+          </div>
+      </div>
+      <div class="footer__group">
+          <h3>Решения для дома:</h3>
+          <div class="footer__links">
+              <a href="#">Солнечные панели GreenRobotic</a>
+              <a href="#">Системы солнечных панелей GreenStation</a>
+          </div>
+      </div>
+      <div class="footer__group">
+          <h3>Компания</h3>
+
+          <div class="footer__links">
+              <a href="#">Контакты</a>
+              <a href="#">Вакансии</a>
+              <a href="#">СМИ</a>
+          </div>
+      </div>
+  </div>
+
+  <div class="footer__copy">
+      GreenCorp © 2021
+  </div>
+ </footer>
+  <script src="js/canvas.js"></script>
+  <script src="js/animation.js"></script>
   <script src="fa/js/all.min.js"></script>
   <script src="uikit/js/uikit.min.js"></script>
   <script src="uikit/js/uikit-icons.min.js"></script>
